@@ -6,20 +6,24 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Ahmad zia",
   "license": "MIT",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.10.0",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
+    "http-proxy-middleware": "^3.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.3"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.0"
   }
 }
