@@ -17,7 +17,7 @@ function Header() {
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());
-    navigate('/register')
+    navigate('/')
   };
   return (
     <header className="header">
