@@ -71,6 +71,7 @@ function Register() {
         </h1>
         <p>Please register an account</p>
       </section>
+
       <section className="form">
         <form onSubmit={onSubmit}>
           <div className="form-group">
@@ -86,7 +87,7 @@ function Register() {
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="email"
               className="form-control"
               id="email"
               name="email"
